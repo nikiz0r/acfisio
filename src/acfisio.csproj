@@ -180,6 +180,10 @@
     <Content Include="Content\fonts\icomoon.svg" />
     <Content Include="Content\fonts\icomoon.ttf" />
     <Content Include="Content\fonts\icomoon.woff" />
+    <Content Include="Content\images\banner\atendimento.jpg" />
+    <Content Include="Content\images\banner\contato.jpg" />
+    <Content Include="Content\images\banner\home.jpg" />
+    <Content Include="Content\images\banner\sobre.jpg" />
     <Content Include="Content\images\logo-1.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\Flaticon.eot" />

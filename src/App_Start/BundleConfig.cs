@@ -28,7 +28,6 @@ namespace acfisio
                 "~/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js",
                 "~/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js",
                 "~/plugins/revolution/revolution/js/extensions/revolution-plugin.js"));
-//                "~/Scripts/rev-script-3.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/css/animate.min.css",
