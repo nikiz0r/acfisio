@@ -9769,7 +9769,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	color: #1BBCE8;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 760px) {
 	.header-info>ul li {
 		display: none;
 	}
@@ -9826,7 +9826,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 /*____HEADER BOTTOM NAV DARK____*/
 
 .header-botton {
-	background-color: #FFF;/*#010e2a;*/
+	background-color: #FFF!important;/*#010e2a;*/
 }
 
 .header-botton .header-nav .nav {
@@ -14378,7 +14378,7 @@ ol.commentlist li::after {
 
 @media (max-width: 1200px) {
 	.main-bar {
-		background-color: #FFF;
+		background-color: #010e2a;
 	}
 }
 

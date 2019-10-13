@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<acfisio.Models.Banner>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -10,15 +12,17 @@
                 <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
                 <div id="rev_slider_1077_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
                     <ul>	
-                        <!-- SLIDE  -->
-                        <li data-index="rs-100" data-transition="slotfade-vertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb="images/banner/equipamentos.png"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Equipamentos" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        @foreach (var banner in Model)
+                        {
+                            <!-- SLIDE  -->
+                            <li data-index="rs-@(banner.Id)00" data-transition="slotfade-vertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb="@banner.ImageUri"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="@banner.Title" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="~/Content/images/banner/contato.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                            <img src="@banner.ImageUri" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                             <!-- LAYERS -->
                             
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption tp-shape tp-shapewrapper  " 
-                                 id="slide-100-layer-1" 
+                                 id="slide-@(banner.Id)00-layer-@(banner.Id)" 
                                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                  data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
                                  data-width="full"
@@ -40,7 +44,7 @@
                             
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption tp-shape tp-shapewrapper  " 
-                                 id="slide-100-layer-2" 
+                                 id="slide-@(banner.Id)00-layer-@(banner.Id)" 
                                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                  data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
                                  data-width="full"
@@ -62,7 +66,7 @@
                     
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption BigBold-Title   tp-resizeme" 
-                                 id="slide-100-layer-3" 
+                                 id="slide-@(banner.Id)00-layer-@(banner.Id)" 
                                  data-x="['left','left','left','left']" data-hoffset="['50','50','30','17']" 
                                  data-y="['bottom','bottom','bottom','bottom']" data-voffset="['110','110','180','180']" 
                                  data-fontsize="['90','70','50','30']"
@@ -88,11 +92,11 @@
                                 text-transform:uppercase;
                                 color:#fff;
                                 font-family: 'Rajdhani', sans-serif;
-                                "><span class="text-primary">  Equipamentos</span></div>
+                                "><span class="text-primary">  @banner.Title</span></div>
                     
                             <!-- LAYER NR. 4 -->
                             <div class="tp-caption BigBold-SubTitle  " 
-                                 id="slide-100-layer-4" 
+                                 id="slide-@(banner.Id)00-layer-@(banner.Id)" 
                                  data-x="['left','left','left','left']" data-hoffset="['55','55','33','20']" 
                                  data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','1','74','78']" 
                                  data-fontsize="['15','15','15','13']"
@@ -115,13 +119,12 @@
                                  style="z-index: 7; 
                                 color:#fff;
                                 ">
-                                A Implastic representa as seguintes empresas aqui no Brasil:
-                                Heraeus, NDC, NORDSON, KASE e COLINES.
+                                @banner.Subtext
                             </div>
                     
                             <!-- LAYER NR. 5 -->
                             <div class="tp-caption BigBold-Button rev-btn " 
-                                 id="slide-100-layer-5" 
+                                 id="slide-@(banner.Id)00-layer-@(banner.Id)" 
                                  data-x="['left','left','left','left']" data-hoffset="['480','480','30','20']" 
                                  data-y="['bottom','bottom','bottom','bottom']" data-voffset="['20','20','20','20']"  
                                  data-width="none"
@@ -141,9 +144,8 @@
                                  data-paddingleft="[50,50,0,0]"
                     
                                  style="z-index: 8; "><a href="#" class="site-button outline white">Leia Mais</a> </div>
-                    
-                            
                         </li>
+                        }
                     </ul>
                     <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
                 </div>

@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-namespace acfisio.Controllers
+﻿namespace acfisio.Controllers
 {
+    using System.Web.Mvc;
+    using Helpers;
+
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
-            return View();
+            return View(BannerHelper.GetBanners());
         }
 
         public ActionResult About()
