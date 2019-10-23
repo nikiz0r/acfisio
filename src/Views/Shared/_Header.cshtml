@@ -1,3 +1,5 @@
+@model acfisio.Models.ModelWrapper
+
 <header class="site-header header-style-6">
     <div class="top-bar top-bar-liner bg-dark">
         <div class="container">
@@ -64,33 +66,21 @@
                 <!-- MAIN Vav -->
                 <div class="header-nav navbar-collapse collapse ">
                     <ul class=" nav navbar-nav">
-                        <li class="active">
-                            <a href="/">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="javascript:;">Produtos / Equipamentos<i class="fa fa-chevron-down"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="sistemas-uv.html">Sistemas UV</a></li>
-                                <li><a href="sistemas-medicao-espessura.html">Sistemas de Medição de Espessura / Gramatura</a></li>
-                                <li><a href="equip-extrusao.html">Equipamentos de Extrusão</a></li>
-                                <li><a href="impressoras.html">Impressoras</a></li>
-                                <li><a href="linhas-extrusao.html">Linhas de Extrusão (Projetos Turn Key)</a></li>
-                                <li><a href="processamento-plastico.html">Processamento de Plástico</a></li>
-                            </ul>
-                        </li> 
-                                                       
-                        <li>
-                            <a href="suporte-tecnico.html">Suporte Técnico</a>
-                        </li>
-                        
-                        <li>
-                            <a href="pecas.html">Vendas de Peças de Reposição</a>
-                        </li>
-
-                        <li>
-                            <a href="contato.html">Contato</a>
-                        </li>
+                        @foreach (var menuItem in Model.Menu)
+                        {
+                            <li class=""> @*TODO: class active*@
+                                <a href="@menuItem.Uri">@menuItem.Title@if(menuItem.SubMenu != null && menuItem.SubMenu.Any()){<i class="fa fa-chevron-down"></i>}</a>
+                                @if (menuItem.SubMenu != null && menuItem.SubMenu.Any())
+                                {
+                                    <ul class="sub-menu">
+                                        @foreach (var subMenuItem in menuItem.SubMenu)
+                                        {
+                                            <li><a href="@subMenuItem.Uri">@subMenuItem.Title</a></li>
+                                        }
+                                    </ul>                                    
+                                }
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

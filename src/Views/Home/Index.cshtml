@@ -1,4 +1,4 @@
-﻿@model List<acfisio.Models.Banner>
+﻿@model acfisio.Models.ModelWrapper
 
 @{
     ViewBag.Title = "Home Page";
@@ -12,7 +12,7 @@
                 <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
                 <div id="rev_slider_1077_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
                     <ul>	
-                        @foreach (var banner in Model)
+                        @foreach (var banner in Model.Banners)
                         {
                             <!-- SLIDE  -->
                             <li data-index="rs-@(banner.Id)00" data-transition="slotfade-vertical" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1000"  data-thumb="@banner.ImageUri"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="@banner.Title" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">

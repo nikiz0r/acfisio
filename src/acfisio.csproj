@@ -121,7 +121,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\BannerHelper.cs" />
+    <Compile Include="Helpers\MenuHelper.cs" />
     <Compile Include="Models\Banner.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\ModelWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
