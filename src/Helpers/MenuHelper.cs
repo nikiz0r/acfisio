@@ -13,26 +13,32 @@ namespace acfisio.Helpers
                 {
                     Id = 0,
                     Title = "Home",
-                    Uri = "Home.aspx"
+                    Action = "Index"
                 },
                 new Menu
                 {
                     Id = 1,
-                    Title = "Produtos",
-                    Uri = "/",
+                    Title = "Serviços",
+                    Action = "/",
                     SubMenu = new List<Menu>
                     {
                         new Menu
                         {
-                            Id = 1,
-                            Title = "Prod1",
-                            Uri = "Prod1.aspx"
+                            Id = 0,
+                            Title = "Fisioterapia Ortopédica",
+                            Action = "Ortopedica"
                         },
                         new Menu
                         {
-                            Id = 0,
-                            Title = "Prod2",
-                            Uri = "Prod2.aspx"
+                            Id = 1,
+                            Title = "Fisioterapia Aquática",
+                            Action = "Aquatica"
+                        },
+                        new Menu
+                        {
+                            Id = 2,
+                            Title = "Geriatria",
+                            Action = "Geriatria"
                         }
                     }
                 }

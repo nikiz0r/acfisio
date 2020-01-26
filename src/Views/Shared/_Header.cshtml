@@ -1,3 +1,4 @@
+@using System.Activities.Statements
 @model acfisio.Models.ModelWrapper
 
 <header class="site-header header-style-6">
@@ -6,7 +7,7 @@
             <div class="row">
                 <div class="mt-topbar-right clearfix">
                     <ul class="list-unstyled pull-right tb-info-liner">
-                        <li><i class="text-primary">Nós temos a solução para seu processo!</i></li>
+                        <li><i class="text-primary">Texto aqui!</i></li>
                     </ul>                        
                     <ul class="list-inline pull-right tb-social-liner">
                         <li><a href="https://www.linkedin.com/in/implastic-ltda-634a0b145/" target="_blank" class="fa fa-linkedin"></a></li>
@@ -32,7 +33,7 @@
                             </div>
                             <div class="icon-content">
                                 <strong>Telefone</strong>
-                                <span class="text-white">+55 11 4192 2211</span>
+                                <span class="text-white">+55 11 9999 9999</span>
                             </div>
                         </div>
                     </li>                        
@@ -43,7 +44,7 @@
                             </div>
                             <div class="icon-content">
                                 <strong>Email</strong>
-                                <span class="text-white">vendas@implastic.com.br</span>
+                                <span class="text-white">contato@acfisioterapia.com.br</span>
                             </div>
                         </div>
                     </li>
@@ -68,14 +69,14 @@
                     <ul class=" nav navbar-nav">
                         @foreach (var menuItem in Model.Menu)
                         {
-                            <li class=""> @*TODO: class active*@
-                                <a href="@menuItem.Uri">@menuItem.Title@if(menuItem.SubMenu != null && menuItem.SubMenu.Any()){<i class="fa fa-chevron-down"></i>}</a>
+                            <li class="@(ViewContext.RouteData.Values["Action"].Equals(menuItem.Action) ? "active" : "")">
+                                <a href="@menuItem.Action">@menuItem.Title @if(menuItem.SubMenu != null && menuItem.SubMenu.Any()){<i class="fa fa-chevron-down"></i>}</a>
                                 @if (menuItem.SubMenu != null && menuItem.SubMenu.Any())
                                 {
                                     <ul class="sub-menu">
                                         @foreach (var subMenuItem in menuItem.SubMenu)
                                         {
-                                            <li><a href="@subMenuItem.Uri">@subMenuItem.Title</a></li>
+                                            <li><a href="@subMenuItem.Action">@subMenuItem.Title</a></li>
                                         }
                                     </ul>                                    
                                 }

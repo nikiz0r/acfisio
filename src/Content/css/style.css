@@ -2590,7 +2590,7 @@ ol.list-num-count.list-outline-none>li:before {
 }
 
 .text-light-blue {
-	color: #1BBCE8;
+	color: #c19187;
 }
 
 
@@ -9595,7 +9595,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	vertical-align: middle;
 	padding: 0;
 	font-size: 36px;
-	color: #1bbce8;
+	color: #c19187;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 0;
@@ -9643,7 +9643,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	vertical-align: middle;
 	padding: 0;
 	font-size: 36px;
-	color: #1bbce8;
+	color: #c19187;
 	margin-top: 0px;
 	margin-bottom: 15px;
 	margin-left: 0;
@@ -9682,7 +9682,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .logo-header span,
 .logo-footer span {
 	font-size: 20px;
-	color: #1bbce8;
+	color: #c19187;
 	letter-spacing: 20px;
 }
 
@@ -9766,7 +9766,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	display: block;
 	font-size: 16px;
 	text-transform: uppercase;
-	color: #1BBCE8;
+	color: #c19187;
 }
 
 @media only screen and (max-width: 760px) {

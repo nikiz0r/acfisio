@@ -7,6 +7,6 @@ namespace acfisio.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public IEnumerable<Menu> SubMenu { get; set; }
-        public string Uri { get; set; }
+        public string Action { get; set; }
     }
 }
