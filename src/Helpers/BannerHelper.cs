@@ -1,8 +1,8 @@
 namespace acfisio.Helpers
 {
     using System.Collections.Generic;
-    using acfisio.Models;
-    
+    using Models;
+
     public static class BannerHelper
     {
         public static List<Banner> GetBanners()
@@ -13,28 +13,28 @@ namespace acfisio.Helpers
                 {
                     Id = 1,
                     Title = "Atendimento",
-                    Subtext = "bla bla bla bla bla bla bla",
+                    Subtext = "Em construção",
                     ImageUri = "Content/images/banner/atendimento.jpg"
                 },
                 new Banner
                 {
                     Id = 2,
                     Title = "Contato",
-                    Subtext = "bla bla bla bla bla bla bla",
+                    Subtext = "Em construção",
                     ImageUri = "Content/images/banner/contato.jpg"
                 },
                 new Banner
                 {
                     Id = 3,
                     Title = "Home",
-                    Subtext = "bla bla bla bla bla bla bla",
+                    Subtext = "Em construção",
                     ImageUri = "Content/images/banner/home.jpg"
                 },
                 new Banner
                 {
                     Id = 4,
                     Title = "Sobre",
-                    Subtext = "bla bla bla bla bla bla bla",
+                    Subtext = "Em construção",
                     ImageUri = "Content/images/banner/sobre.jpg"
                 }
             };
