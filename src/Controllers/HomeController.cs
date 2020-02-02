@@ -15,16 +15,40 @@
             return View(mw);
         }
 
-        public ActionResult About()
+        public ActionResult Ortopedica()
         {
-            ViewBag.Message = "Your application description page.";
-            return View();
+            var mw = new ModelWrapper()
+                .WithMenu()
+                .Build();
+            
+            return View(mw);
         }
-
-        public ActionResult Contact()
+        
+        public ActionResult Aquatica()
         {
-            ViewBag.Message = "Your contact page.";
-            return View();
+            var mw = new ModelWrapper()
+                .WithMenu()
+                .Build();
+            
+            return View(mw);
+        }
+        
+        public ActionResult Senior()
+        {
+            var mw = new ModelWrapper()
+                .WithMenu()
+                .Build();
+            
+            return View(mw);
+        }
+        
+        public ActionResult DryNeedling()
+        {
+            var mw = new ModelWrapper()
+                .WithMenu()
+                .Build();
+            
+            return View(mw);
         }
     }
 }
