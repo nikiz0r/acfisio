@@ -2653,7 +2653,7 @@ ol.list-num-count.list-outline-none>li:before {
 }
 
 .bg-dark {
-	background-color: #010e2a;
+	background-color: #3a5c66;
 }
 
 
@@ -11437,7 +11437,7 @@ background-color: transparent;
 }
 
 .footer-dark .footer-bottom {
-	background-color: #01091b;
+	background-color: #3a5c66;
 }
 
 .footer-dark .footer-top h1,
@@ -14378,7 +14378,7 @@ ol.commentlist li::after {
 
 @media (max-width: 1200px) {
 	.main-bar {
-		background-color: #010e2a;
+		background-color: #3a5c66;
 	}
 }
 
