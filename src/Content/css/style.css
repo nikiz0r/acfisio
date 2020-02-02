@@ -652,6 +652,10 @@ ____INNER PAGE BANNER____*/
 
 /*____GENERAL____*/
 
+html {
+	height: 100%;
+}
+
 body {
 	background-color: #FFF;
 	font-family: 'Rajdhani', sans-serif;
@@ -661,6 +665,7 @@ body {
 	padding: 0;
 	margin: 0;
 	overflow-x: hidden;
+	height: 100%;
 }
 
 a {
@@ -11360,6 +11365,10 @@ background-color: transparent;
 .site-footer {
 	background-position: center;
 	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	height: 97px;
+	width: 100%;
 }
 
 .site-footer p {
@@ -11846,10 +11855,13 @@ button.scroltop span {
 
 .page-wraper {
 	background: #fff;
+	min-height: 100%;
+	position: relative;
 }
 
 .page-content {
 	position: relative;
+	padding-bottom: 97px;
 }
 
 .section-full {

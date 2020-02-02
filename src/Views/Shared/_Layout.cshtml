@@ -23,8 +23,9 @@
         <div class="page-content">
             @RenderBody()
         </div>
+        
+        @{Html.RenderPartial("_Footer");}
     </div>
-    @{Html.RenderPartial("_Footer");}
                 
     <button class="scroltop"><span class="fa fa-arrow-right relative" id="btn-vibrate"></span></button>
 
