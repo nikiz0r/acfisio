@@ -13,7 +13,7 @@ namespace acfisio.Helpers
                 {
                     Id = 0,
                     Title = "Home",
-                    Action = "Index"
+                    Action = "/"
                 },
                 new Menu
                 {
