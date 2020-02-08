@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <meta name="robots" content="" />    
+    <meta name="robots" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>@ViewBag.Title</title>
-    
-    @Styles.Render("~/Content/css")
+
+    <title>Ana Carolina Cândido - @ViewBag.Title</title>
+
     @Styles.Render("~/Revolution/css")
-    
+    <link href="~/Content/css/flaticon.min.css" rel="stylesheet" />
+    <link href="~/Content/css/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700" rel="stylesheet">
 </head>
 <body>
@@ -43,7 +44,6 @@
         </div>
     </div>
 
-    @Scripts.Render("~/bundles/scripts")
     @Scripts.Render("~/Revolution/scripts")
     <script type="text/javascript" src="~/Scripts/rev-script-3.js"></script>
     @RenderSection("scripts", required: false)

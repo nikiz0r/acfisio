@@ -180,7 +180,9 @@
     <Content Include="Content\css\skin\skin-6.css" />
     <Content Include="Content\css\skin\skin-7.css" />
     <Content Include="Content\css\skin\skin-8.css" />
-    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\style.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\fonts\icomoon.eot" />
     <Content Include="Content\fonts\icomoon.svg" />
     <Content Include="Content\fonts\icomoon.ttf" />
