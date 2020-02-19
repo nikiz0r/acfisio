@@ -18,26 +18,14 @@ namespace acfisio.Helpers
                 new Menu
                 {
                     Id = 1,
-                    Title = "Fisioterapia Ortopédica",
-                    Action = "Ortopedica"
+                    Title = "Serviços",
+                    Action = "Servicos"
                 },
                 new Menu
                 {
                     Id = 2,
-                    Title = "Fisioterapia Aquática",
-                    Action = "Aquatica"
-                },
-                new Menu
-                {
-                    Id = 3,
-                    Title = "Mobilidade Sênior",
-                    Action = "Senior"
-                },
-                new Menu
-                {
-                    Id = 4,
-                    Title = "Dry Needling",
-                    Action = "DryNeedling"
+                    Title = "Contato",
+                    Action = "Contato"
                 }
             };
         }

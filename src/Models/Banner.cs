@@ -6,5 +6,6 @@ namespace acfisio.Models
         public string Title { get; set; }
         public string Subtext { get; set; }
         public string ImageUri { get; set; }
+        public string Url { get; set; }
     }
 }

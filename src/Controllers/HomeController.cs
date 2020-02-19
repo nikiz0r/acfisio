@@ -15,39 +15,21 @@
             return View(mw);
         }
 
-        public ActionResult Ortopedica()
+        public ActionResult Contato()
         {
             var mw = new ModelWrapper()
                 .WithMenu()
                 .Build();
-            
+
             return View(mw);
         }
-        
-        public ActionResult Aquatica()
+
+        public ActionResult Servicos()
         {
             var mw = new ModelWrapper()
                 .WithMenu()
                 .Build();
-            
-            return View(mw);
-        }
-        
-        public ActionResult Senior()
-        {
-            var mw = new ModelWrapper()
-                .WithMenu()
-                .Build();
-            
-            return View(mw);
-        }
-        
-        public ActionResult DryNeedling()
-        {
-            var mw = new ModelWrapper()
-                .WithMenu()
-                .Build();
-            
+
             return View(mw);
         }
     }

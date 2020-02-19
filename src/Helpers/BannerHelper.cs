@@ -13,29 +13,26 @@ namespace acfisio.Helpers
                 {
                     Id = 1,
                     Title = "Atendimento",
-                    Subtext = "Em construção",
-                    ImageUri = "Content/images/banner/atendimento.jpg"
+                    Subtext = "Fisioterapia especializada em ortopedia esportiva e hidroterapia no tratamento " +
+                    "de dores crônicas, musculares, tendinites, bursites, pré e pós-operatório.",
+                    ImageUri = "Content/images/banner/atendimento.jpg",
+                    Url = "Servicos"
                 },
                 new Banner
                 {
                     Id = 2,
                     Title = "Contato",
                     Subtext = "Em construção",
-                    ImageUri = "Content/images/banner/contato.jpg"
+                    ImageUri = "Content/images/banner/contato.jpg",
+                    Url = "Contato"
                 },
                 new Banner
                 {
                     Id = 3,
                     Title = "Home",
                     Subtext = "Em construção",
-                    ImageUri = "Content/images/banner/home.jpg"
-                },
-                new Banner
-                {
-                    Id = 4,
-                    Title = "Sobre",
-                    Subtext = "Em construção",
-                    ImageUri = "Content/images/banner/sobre.jpg"
+                    ImageUri = "Content/images/banner/home.jpg",
+                    Url = "Index"
                 }
             };
         } 

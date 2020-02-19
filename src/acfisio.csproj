@@ -2046,9 +2046,6 @@
     <Content Include="Scripts\stellar.min.js" />
     <Content Include="Scripts\waypoints-sticky.min.js" />
     <Content Include="Scripts\waypoints.min.js" />
-    <Content Include="Views\Home\Aquatica.cshtml" />
-    <Content Include="Views\Home\DryNeedling.cshtml" />
-    <Content Include="Views\Home\Senior.cshtml" />
     <Content Include="Views\Shared\index.html" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
@@ -2063,8 +2060,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Ortopedica.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Contato.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -2077,6 +2073,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Home\Servicos.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
