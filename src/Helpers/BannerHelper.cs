@@ -12,11 +12,11 @@ namespace acfisio.Helpers
                 new Banner
                 {
                     Id = 1,
-                    Title = "Atendimento",
+                    Title = "Atendimentos",
                     Subtext = "Fisioterapia especializada em ortopedia esportiva e hidroterapia no tratamento " +
                     "de dores crônicas, musculares, tendinites, bursites, pré e pós-operatório.",
                     ImageUri = "Content/images/banner/atendimento.jpg",
-                    Url = "Servicos"
+                    Url = "Atendimentos"
                 },
                 new Banner
                 {

@@ -18,8 +18,8 @@ namespace acfisio.Helpers
                 new Menu
                 {
                     Id = 1,
-                    Title = "Serviços",
-                    Action = "Servicos"
+                    Title = "Atendimentos",
+                    Action = "Atendimentos"
                 },
                 new Menu
                 {

@@ -123,6 +123,7 @@
     <Compile Include="Helpers\BannerHelper.cs" />
     <Compile Include="Helpers\MenuHelper.cs" />
     <Compile Include="Models\Banner.cs" />
+    <Compile Include="Models\ContatoModel.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\ModelWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -192,6 +193,7 @@
     <Content Include="Content\images\banner\home.jpg" />
     <Content Include="Content\images\banner\sobre.jpg" />
     <Content Include="Content\images\logo-1.png" />
+    <Content Include="Content\template\contato.html" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\Flaticon.eot" />
     <Content Include="fonts\flaticon.html" />
@@ -2073,7 +2075,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
-    <Content Include="Views\Home\Servicos.cshtml" />
+    <Content Include="Views\Home\Atendimentos.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
