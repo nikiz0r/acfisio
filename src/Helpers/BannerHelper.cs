@@ -25,14 +25,6 @@ namespace acfisio.Helpers
                     Subtext = "Em construção",
                     ImageUri = "Content/images/banner/contato.jpg",
                     Url = "Contato"
-                },
-                new Banner
-                {
-                    Id = 3,
-                    Title = "Home",
-                    Subtext = "Em construção",
-                    ImageUri = "Content/images/banner/home.jpg",
-                    Url = "Index"
                 }
             };
         } 
