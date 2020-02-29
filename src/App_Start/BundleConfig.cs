@@ -29,6 +29,7 @@ namespace acfisio
                 "~/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js",
                 "~/plugins/revolution/revolution/js/extensions/revolution-plugin.js",
                 "~/Scripts/jquery-1.12.4.min.js",
+                "~/Scripts/jquery.mask.min.js",
                 "~/Scripts/bootstrap.min.js",
                 "~/Scripts/bootstrap-select.min.js",
                 "~/Scripts/jquery.bootstrap-touchspin.min.js",

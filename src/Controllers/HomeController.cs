@@ -49,6 +49,7 @@
             string template = System.IO.File.ReadAllText(Server.MapPath("~/Content/template/contato.html"));
             template = template.Replace("#NOME#", contato.name);
             template = template.Replace("#EMAIL#", contato.email);
+            template = template.Replace("#TELEFONE#", contato.telefone);
             template = template.Replace("#MENSAGEM#", contato.message);
 
             var client = new SmtpClient("smtp.sendgrid.net", 587)
@@ -66,7 +67,7 @@
             message.Subject = subject;
             message.Body = template;
 
-            //client.Send(message);
+            client.Send(message);
 
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }
