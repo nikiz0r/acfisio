@@ -41,22 +41,22 @@
         {
             string username = ConfigurationManager.AppSettings["username"].ToString();
             string password = ConfigurationManager.AppSettings["password"].ToString();
-            string emailfrom = "contato@topfrutti.com.br";
-            string emailTo = "contato@topfrutti.com.br";
-            string fromName = "Top Frutti";
-            string subject = "Top Frutti - Contato";
+            string emailfrom = "contato@acfisioterapia.com.br";
+            string emailTo = "contato@acfisioterapia.com.br";
+            string fromName = "AC Fisioterapia";
+            string subject = "AC Fisioterapia - Contato";
 
             string template = System.IO.File.ReadAllText(Server.MapPath("~/Content/template/contato.html"));
             template = template.Replace("#NOME#", contato.name);
             template = template.Replace("#EMAIL#", contato.email);
-            template = template.Replace("#TELEFONE#", contato.phone);
             template = template.Replace("#MENSAGEM#", contato.message);
 
-            var client = new SmtpClient("email-smtp.us-east-1.amazonaws.com", 587)
+            var client = new SmtpClient("smtp.sendgrid.net", 587)
             {
                 UseDefaultCredentials = false,
                 EnableSsl = true,
                 Credentials = new NetworkCredential(username, password),
+                DeliveryMethod = SmtpDeliveryMethod.Network
             };
 
             MailMessage message = new MailMessage();
@@ -66,7 +66,7 @@
             message.Subject = subject;
             message.Body = template;
 
-            client.Send(message);
+            //client.Send(message);
 
             return Json(new { success = true }, JsonRequestBehavior.AllowGet);
         }

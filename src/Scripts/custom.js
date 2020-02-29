@@ -812,21 +812,20 @@ jQuery(window).on('resize', function () {
 		/* sending message */
 		
 		jQuery.ajax({
-			url: 'http://implastic.com.br/mailer/form-handler.php',
+			url: 'contato',
 			data: form.serialize() + "&action=contactform",
 			type: 'POST',
 			dataType: 'JSON',
 			beforeSend: function() {
 				jQuery('.loading-area').show();
-				
 			},
 
 			success:function(data){
 				jQuery('.loading-area').hide();
 				if(data['success']){
-				jQuery("<div class='alert alert-success'>"+data['message']+"</div>").insertBefore('form.cons-contact-form');
+				jQuery("<div class='alert alert-success'>Obrigado por entrar em contato conosco.</div>").insertBefore('form.cons-contact-form');
 				}else{
-				jQuery("<div class='alert alert-danger'>"+data['message']+"</div>").insertBefore('form.cons-contact-form');
+				jQuery("<div class='alert alert-danger'>Ocorreu um erro ao enviar sua mensagem, tente novamente mais tarde.</div>").insertBefore('form.cons-contact-form');
 				}
 			}
 		});
