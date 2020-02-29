@@ -10422,6 +10422,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	header .logo {
 		display: block;
 		padding: 4px 0;
+		margin: auto;
 	}
 	.header-nav .nav i {
 		margin-top: 6px;
@@ -14390,7 +14391,7 @@ ol.commentlist li::after {
 
 @media (max-width: 1200px) {
 	.main-bar {
-		background-color: #3a5c66;
+		background-color: #fff;
 	}
 }
 
