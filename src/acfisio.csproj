@@ -188,6 +188,11 @@
     <Content Include="Content\fonts\icomoon.svg" />
     <Content Include="Content\fonts\icomoon.ttf" />
     <Content Include="Content\fonts\icomoon.woff" />
+    <Content Include="Content\images\atendimentos\dryneedling.jpg" />
+    <Content Include="Content\images\atendimentos\eletroterapia.jpg" />
+    <Content Include="Content\images\atendimentos\liberacaomiofacial.jpg" />
+    <Content Include="Content\images\atendimentos\mobilidadesenior.jpg" />
+    <Content Include="Content\images\atendimentos\terapiamanual.jpg" />
     <Content Include="Content\images\banner\atendimento.jpg" />
     <Content Include="Content\images\banner\contato.jpg" />
     <Content Include="Content\images\banner\home.jpg" />
@@ -2035,6 +2040,7 @@
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\jquery.bgscroll.js" />
     <Content Include="Scripts\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="Scripts\jquery.mask.min.js" />
     <Content Include="Scripts\jquery.owl-filter.js" />
     <Content Include="Scripts\magnific-popup.min.js" />
     <Content Include="Scripts\map.script.js" />
